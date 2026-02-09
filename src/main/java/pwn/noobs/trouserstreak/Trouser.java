@@ -69,6 +69,7 @@ public class Trouser extends MeteorAddon {
                 Modules.get().add(new LecternCrash());
                 Modules.get().add(new TPAura());
                 Modules.get().add(new MaceKill());
+                Modules.get().add(new MannequinPlus());
                 Modules.get().add(new MobGearESP());
                 Modules.get().add(new MultiUse());
                 Modules.get().add(new MultiverseAnnihilator());
@@ -108,6 +109,9 @@ public class Trouser extends MeteorAddon {
                 Commands.add(new AutoVaultHclipCommand());
                 Commands.add(new ViewNbtCommand());
                 Commands.add(new WorldInfoCommand());
+                Commands.add(new AABCommand());
+                Commands.add(new AABListCommand());
+                Commands.add(new StampedeCommand());
                 Hud.get().register(ElytraCount.INFO);
                 Hud.get().register(WaypointTriangulationHud.INFO);
         }

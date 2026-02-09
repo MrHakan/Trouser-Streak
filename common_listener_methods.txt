@@ -1,0 +1,16 @@
+﻿Compiled from "ClientCommonPacketListener.java"
+public interface net.minecraft.network.listener.ClientCommonPacketListener extends net.minecraft.network.listener.ClientCookieRequestPacketListener {
+  public abstract void onKeepAlive(net.minecraft.network.packet.s2c.common.KeepAliveS2CPacket);
+  public abstract void onPing(net.minecraft.network.packet.s2c.common.CommonPingS2CPacket);
+  public abstract void onCustomPayload(net.minecraft.network.packet.s2c.common.CustomPayloadS2CPacket);
+  public abstract void onDisconnect(net.minecraft.network.packet.s2c.common.DisconnectS2CPacket);
+  public abstract void onResourcePackSend(net.minecraft.network.packet.s2c.common.ResourcePackSendS2CPacket);
+  public abstract void onResourcePackRemove(net.minecraft.network.packet.s2c.common.ResourcePackRemoveS2CPacket);
+  public abstract void onSynchronizeTags(net.minecraft.network.packet.s2c.common.SynchronizeTagsS2CPacket);
+  public abstract void onStoreCookie(net.minecraft.network.packet.s2c.common.StoreCookieS2CPacket);
+  public abstract void onServerTransfer(net.minecraft.network.packet.s2c.common.ServerTransferS2CPacket);
+  public abstract void onCustomReportDetails(net.minecraft.network.packet.s2c.common.CustomReportDetailsS2CPacket);
+  public abstract void onServerLinks(net.minecraft.network.packet.s2c.common.ServerLinksS2CPacket);
+  public abstract void onClearDialog(net.minecraft.network.packet.s2c.common.ClearDialogS2CPacket);
+  public abstract void onShowDialog(net.minecraft.network.packet.s2c.common.ShowDialogS2CPacket);
+}

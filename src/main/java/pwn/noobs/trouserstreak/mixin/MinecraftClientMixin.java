@@ -9,14 +9,11 @@ import pwn.noobs.trouserstreak.modules.InfiniteReach;
 
 @Mixin(MinecraftClient.class)
 public abstract class MinecraftClientMixin {
-    @Inject(
-        method = "doAttack",
-        at = @At("HEAD"),
-        cancellable = true
-    )
+    @Inject(method = "doAttack", at = @At("HEAD"), cancellable = true)
     private void onDoAttack(CallbackInfoReturnable<Boolean> cir) {
-        if (InfiniteReach.INSTANCE != null && InfiniteReach.INSTANCE.isActive() && InfiniteReach.INSTANCE.hoveredTarget != null) {
-            InfiniteReach.INSTANCE.hitEntity(InfiniteReach.INSTANCE.hoveredTarget);
+        if (InfiniteReach.INSTANCE != null && InfiniteReach.INSTANCE.isActive()
+                && InfiniteReach.INSTANCE.hoveredTarget != null) {
+            InfiniteReach.INSTANCE.hitEntity(InfiniteReach.INSTANCE.hoveredTarget, true);
             cir.setReturnValue(true);
         }
     }

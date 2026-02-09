@@ -1,0 +1,10 @@
+build/
+.gradle/
+run/
+.idea/
+.vscode/
+bin/
+*.class
+*.log
+*.jar
+!src/**/resources/*.jar
